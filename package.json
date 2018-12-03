@@ -1,0 +1,39 @@
+{
+  "name": "crud",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "DEBUG=crud:* node ./bin/www",
+    "test": "mocha --inspect --watch -t 10000 --recursive test --require ./test/setup.js  --reporter spec || exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chance": "^1.0.16",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.6.0",
+    "express": "~4.16.0",
+    "express-validator": "^5.3.0",
+    "generaterr": "^1.5.0",
+    "http-errors": "~1.6.2",
+    "joi": "^14.1.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.0",
+    "morgan": "~1.9.0",
+    "restify": "^7.2.3",
+    "restify-errors": "^6.1.1",
+    "restify-plugins": "^1.6.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "chai": "^4.2.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  }
+}

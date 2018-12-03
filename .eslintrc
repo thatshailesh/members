@@ -1,0 +1,58 @@
+{
+  "extends": ["airbnb", "prettier"],
+  "rules": {
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "arrow-body-style": ["error", "as-needed"],
+    "arrow-parens": ["error", "as-needed"],
+    "arrow-spacing": "error",
+    "camelcase": "warn",
+    "consistent-return": 0,
+    "dot-notation": [
+      "error",
+      {
+        "allowKeywords": true
+      }
+    ],
+    "func-names": "off",
+    "no-duplicate-imports": "error",
+    "no-const-assign": "error",
+    "no-console": 0,
+    "no-param-reassign": "off",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "curly": ["error", "multi", "consistent"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["test/**", "release.js"]
+      }
+    ],
+    "no-underscore-dangle": [
+      "warn",
+      {
+        "allow": ["_id", "__v"]
+      }
+    ],
+    "no-useless-rename": "error",
+    "no-tabs": "off",
+    "object-shorthand": ["error", "always"],
+    "semi": 0,
+    "template-curly-spacing": ["error", "never"]
+  },
+  "plugins": [],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true
+  }
+}
